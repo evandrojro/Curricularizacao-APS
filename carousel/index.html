@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Sustentabilidade News</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+       
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+
+<body>
+  <header>
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top " style="background-color: #2E1A5D" >
+      <div class="container-fluid" >
+        <a class="navbar-brand" href="#">Unifebe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#infos">Informações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"  href="#quemsomos">Quem somos?</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+            <button id="butaopesquisar" class="btn btn-outline-success" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+          <img src="img/slide2.jpg" width="100%" height="100%">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Desmatamento na Amazônia dispara e atinge recorde em 12 anos</h1>
+              <p>A maior floresta tropical do mundo perdeu 11.088 quilômetros quadrados de árvores no ano passado, 9,5% a mais que no ano anterior</p>
+              <p><a id = "butaoslide"class="btn btn-lg btn-primary" href="https://brasil.elpais.com/brasil/2020-11-30/desmatamento-na-amazonia-dispara-e-atinge-recorde-em-12-anos.html" target = "_blank" >Saiba mais...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src = "img/slide1.jpg" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>As leis que protegem (e outras que ameaçam) a preservação da Amazônia </h1>
+              <p>O número de incêndios na Amazônia bateu recordes esse ano. E as mudanças na legislação ambiental sinalizam um cenário ainda mais desanimador</p>
+              <p><a id = "butaoslide" class="btn btn-lg btn-primary" href="https://guiadoestudante.abril.com.br/estudo/as-leis-que-protegem-e-outras-que-ameacam-a-preservacao-da-amazonia/" target = "_blank">Saiba mais...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slide3.jpg" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Maior lucratividade é um dos benefícios da fazenda sustentável. Saiba como alcançar mais ganhos
+              </h1>
+              
+              <p><a id = "butaoslide" class="btn btn-lg btn-primary" href="https://digital.agrishow.com.br/sustentabilidade/maior-lucratividade-um-dos-benef-cios-da-fazenda-sustent-vel-saiba-como-alcan-ar" target="_blank">Saiba mais...</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="d-flex align-items-start" id="infos">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tabbutao" role="tablist" aria-orientation="vertical">
+        <button class="nav-link " id="butao" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="true">O que é sustentabilidade?</button>
+        <button class="nav-link active" id="butao" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false">Regulamento selo verde</button>
+        <button class="nav-link" id="butao" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Dia D Ecoponto</button>
+        <button class="nav-link" id="butao" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Oceano de Plástico</button>
+      </div>
+      <div class="box">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >  
+          <h4>Regulamento selo verde</h4>
+             <p>
+          <strong>Art. 1º </strong>Este regulamento sistematiza as normas e procedimentos referentes à
+          apresentação e avaliação dos projetos inscritos no programa Selo Verde para fins de
+          certificação dos mesmos, dispondo ainda os requisitos para participação.
+        </p>
+        <p>
+          <h4>Seção I - Dos Objetivos do Programa</h4>
+          <strong>Art. 2º </strong>O Selo Verde tem como objetivo avaliar, mobilizar, conscientizar, atestar,
+          reconhecer e certificar as iniciativas sustentáveis e estimular entes públicos, empresa
+          e organizações para práticas e ações socioambientais, estimulando o senso crítico dos
+          consumidores e a sua preferência por empresas, projetos e produtos que possuam
+          responsabilidade ambiental. 
+        </p>
+        <p>
+          <h4>Seção II - Da justificativa do programa</h4>
+          <strong>Art. 3º </strong>O programa Selo Verde foi desenvolvido para estimular o cumprimento dos
+          Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas
+          (ONU), por meio do reconhecimento de entes públicos, empresas e organizações que
+          realizam práticas socioambientais em consonância com pelo menos um dos objetivos:
+          <ul>
+            <li>
+              ODS 11: Tornar as cidades e os assentamentos humanos inclusivos, seguros,
+              resilientes e sustentáveis;
+            </li>
+            <li>
+              ODS 12: Assegurar padrões de produção e de consumo sustentável;
+            </li>
+            <li>
+              ODS 13: Tomar medidas urgentes para combater a mudança do clima e seus
+              impactos;
+            </li>
+            <li>
+              ODS 14: Conservação e uso sustentável dos oceanos, dos mares e dos
+              recursos marinhos para o desenvolvimento sustentável; 
+            </li>
+            <li>
+              ODS 15: Proteger, recuperar e promover o uso sustentável dos ecossistemas
+              terrestres, gerir de forma sustentável as florestas, combater a desertificação,
+              deter e reverter a degradação da terra e deter a perda de biodiversidade. 
+            </li>
+          </ul>
+        </p>
+        <p>
+          <strong>Art. 4º </strong> O programa visa estimular o senso crítico dos consumidores para o consumo
+          de produtos e contratação de serviços que possuam responsabilidade ambiental 
+        </p>
+        <p>
+          <strong>Art. 5º </strong>O programa também busca incentivar empresas a instituírem práticas mais
+          sustentáveis, e que buscam a maior preservação do meio ambiente. 
+        </p>
+        <p>
+          <h4>Seção III - Da Elegibilidade</h4>
+          <strong>Art. 6º </strong> Poderão se inscrever e participar do Programa Selo Verde os empreendimentos
+          apresentados por:
+          <ol>
+            <li>
+              Entes públicos da administração indireta: Fundações, Autarquias,
+              Empresas Públicas e Sociedade de Economia Mista; 
+            </li>
+            <li>
+              Organizações privadas com fins lucrativos: Empresas de micro,
+              pequeno, médio e grande porte e empreendedor individual; 
+            </li>
+            <li>
+              Organizações da sociedade civil: ONGs, OSCIPs, Associações,
+              Institutos, Unidades de Ensino Particular, Instituições Religiosas e
+              outros com domicílio no município. 
+            </li>
+          </ol>
+        </p>
+        <p>
+          <strong>Art. 7º </strong>Não poderão ser inscritas práticas sustentáveis obrigatórias pela legislação 
+        </p>
+        <p>
+          <strong>Art. 8º </strong> Não poderão ser inscritas empresas e empreendedores que estão cumprindo
+          compensação por um impacto ambiental, com exceção dos empreendedores que
+          investirem um valor superior ao estabelecido pelo órgão ambiental. 
+        </p>
+        <p>
+          <h4>Seção IV - Das Inscrições e período de inscrição</h4>
+          <strong>Art. 9º </strong> As inscrições são voluntárias e gratuitas. 
+        </p>
+        <p>
+          <strong>Art. 10º </strong> As inscrições devem ser feitas no site da FAMAI, link
+          <a href="https://famai.itajai.sc.gov.br/cadastro-selo-verde. " target="_blank">https://famai.itajai.sc.gov.br/cadastro-selo-verde. </a>
+        </p>
+        <p>
+          <strong>Art. 11º </strong> As inscrições devem ser feitas no período de 20/11/2020 à 20/12/2020. 
+        </p>
+        <p>
+          <strong>Art. 12º </strong> O ato de inscrição implica no conhecimento prévio e total aceitação das
+          cláusulas que regem o presente regulamento.
+        </p>
+        <p>
+          <h4>Seção V - Da composição da Comissão do Selo Verde</h4>
+          <strong>Art. 13º </strong>A comissão do Selo Verde de Itajaí será composta pela Comissão Gestora e
+          pela Comissão Julgadora.  
+        </p>
+        <p>
+          <strong>Art. 14º </strong> A Comissão Gestora será composta por um(a) Coordenador(a) e um(a)
+          Secretário(a) Executiva(o), ambos os cargos serão ocupados e indicados pelos
+          representantes do órgão ambiental municipal. 
+        </p>
+        <p>
+          <strong>Art. 15º </strong> A Comissão Julgadora é composta por um representante e respectivo
+          suplente das seguintes entidades convidadas a participar, devido a sua imparcialidade
+          e reputação ilibada
+          <ol>
+            <li>
+              Associação Empresarial de Itajaí – ACII
+            </li>
+            <li>
+              Ordem dos Advogados do Brasil – OAB Subseção Itajaí  
+            </li>
+            <li>
+              Observatório Social de Itajaí – OSI 
+            </li>
+            <li>
+              Câmara de Dirigentes Lojistas de Itajaí – CDL 
+            </li>
+            <li>
+              Conselho Regional de Engenharia e Agronomia de Santa Catarina – CREA
+              Inspetoria de Itajaí 
+            </li>
+          </ol>
+        </p>
+        <p>
+          <h4>Seção VI - Da Avaliação</h4>
+          <strong>Art. 16º </strong>A comissão julgadora fará a avaliação dos formulários e documentação em até
+          20 dias após o fim das inscrições, para produzir o parecer com os resultados,
+          informando se os participantes atingiram a pontuação mínima necessária para a
+          certificação.   
+        </p>
+        <p>
+          <strong>Art. 17º </strong> Após a divulgação da pontuação os participantes terão o prazo de cinco dias
+          para entrar com recurso. 
+        </p>
+        <p>
+          <h4>Seção VII -  Dos critérios de avaliação</h4>
+          <ol>
+            <li>
+              Redução no consumo de energia elétrica:
+            </li>
+            <li>
+              Redução no consumo de água;   
+            </li>
+            <li>
+              Gerenciamento dos resíduos sólidos;  
+            </li>
+            <li>
+              Tratamento de efluentes; 
+            </li>
+            <li>
+              Sensibilização para os moradores em relação à sustentabilidade; 
+            </li>
+            <li>
+              Áreas verdes
+            </li>
+            <li>
+              Áreas permeáveis
+            </li>
+            <li>
+              Acessibilidade 
+            </li>
+          </ol>   
+        </p>
+        <p>
+          <h4>Seção VIII - Dos documentos: </h4>
+          <strong>Art. 18º </strong>Serão aceitos como documentos comprobatórios:
+          <ol>
+            <li>
+              Participação efetiva na coleta seletiva do Município 
+            </li>
+            <li>
+              Participação/Comprometimento no Programa Lixo Zero   
+            </li>
+            <li>
+              Licença ambiental;  
+            </li>
+            <li>
+              Projeto executivo;
+            </li>
+            <li>
+              Projeto hidrossanitário; 
+            </li>
+            <li>
+              Projeto arquitetônico; 
+            </li>
+            <li>
+              Projeto elétrico;
+            </li>
+            <li>
+              Relatório fotográfico; 
+            </li>
+            <li>
+              CND - Certidão Negativa de Débitos; 
+            </li>
+            <li>
+              Alvará municipal. 
+            </li>
+          </ol>
+          Parágrafo único: A Comissão Julgadora poderá exigir os documentos comprobatórios
+          que julgar necessário e até mesmo fazer diligências in loco. 
+        </p>
+        <p>
+          <h4>Seção IX - Da premiação e certificação</h4>
+          <strong>Art. 19º </strong> Será premiado com o Selo Verde Destaque o projeto que atingir a maior
+          pontuação nos critérios de avaliação. 
+        </p>
+        <p>
+          <strong>Art. 20º </strong> Os demais participantes que atingirem a pontuação acima de 60 pontos
+          receberão a certificação do Selo Verde.
+        </p>
+        <p>
+          <h4>Seção X - Da Validade da Certificação</h4>
+          <strong>Art. 21º </strong> A certificação será válida pelo prazo de 2 (dois) anos para empreendimento e
+          1 (um) ano para projetos.    
+        </p>
+        <p>
+          <h4>Seção XI - Da Validade da Certificação</h4>
+          <strong>Art. 22º </strong>  No primeiro momento, a categoria a ser contemplada pelo programa será a
+          CONSTRUÇÃO CIVIL – Empreendimentos e projetos. Sendo que quando certificado
+          na fase de projetos deverá ser feita auditoria dos locais para verificar se os parâmetros
+          foram seguidos.     
+        </p>
+        <p>
+          <strong>Art. 23º </strong> Fica a critério da Comissão a inclusão de outras categorias conforme
+          estabelecido no Projeto Selo Verde. 
+        </p>
+        <p>
+          <strong>Art. 24º </strong> Quaisquer dúvidas ou omissões que possam surgir a respeito do presente
+          regulamento, serão resolvidas pela Comissão julgadora do Programa Selo Verde. 
+        </p>
+        <p>
+          <strong>Art. 25º </strong> O Programa Selo Verde fica desde já reservado ao direito de exibir, divulgar e
+          debater as ações premiadas em escolas, universidades, seminários, congressos ou
+          quaisquer eventos, podendo também fazer uso deste material para futuras publicações
+          em caráter educacional e de divulgação, mediante prévia autorização do participante.
+        </p></div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <h4>Núcleo de Gestão Ambiental realiza mais uma edição do Dia D Ecoponto</h4>
+          <p>
+            Projeto será realizado na sexta-feira, 28 de maio, no pátio do Sesc
+          </p>
+          <p>
+            A primeira edição do Dia D Ecoponto, promovida pelo Núcleo de Gestão Ambiental da Associação Empresarial de Brusque (ACIBr) será realizada na próxima sexta-feira, 28 de maio, das 9h às 11h e das 14h às 17h, no pátio do Sesc. Na oportunidade, serão recebidos gratuitamente equipamentos eletrônicos, pilhas, baterias e pneus. Apenas o descarte de lâmpadas tem o custo de R$ 1 por unidade. 
+            Por conta da pandemia da Covid-19, o Dia D Ecoponto acontecerá no formato de drive-thru, respeitando todas as normas de saúde e segurança. Desta forma, é solicitado que a comunidade deposite os resíduos no porta-malas, sem a necessidade de desligar ou sair do carro. “Ao entrar no Sesc já estará sinalizado o local de estacionamento. Nossa equipe, formada por membros do Núcleo de Gestão Ambiental, da Fundema e do Sesc, devidamente paramentada com equipamentos de segurança, fará a retirada dos resíduos e a liberação do porta-malas, sem contato com nenhuma pessoa”, detalha a coordenadora do Núcleo de Gestão Ambiental, Janara Benvenutti Gamba. 
+          </p>
+          <strong>Descarte</strong>
+          <p>
+            A Fundação do Meio Ambiente (Fundema) é parceira do projeto e supervisiona o recebimento e a destinação dos resíduos. “É uma questão de saúde pública e o nosso objetivo é proporcionar mais qualidade ambiental aos moradores de Brusque e região”, conta Janara.
+            A empresa Cidade Limpa, associada ao Núcleo, está licenciada para o armazenamento temporário dos resíduos coletados. De lá, o lixo eletrônico segue para Florianópolis, as lâmpadas para Balneário Camboriú e as pilhas e baterias para São Paulo, através de uma parceria com as empresas Irmãos Fischer e Renaux View. Apenas os pneus são reaproveitados em Brusque. 
+            “Através de parcerias conseguimos oferecer este serviço de forma gratuita à população. Apenas as lâmpadas tem o custo que nos é repassado”, observa a coordenadora. 
+            Além do Dia D, existem dois pontos permanentes de coleta de lixo eletrônico da cidade, disponíveis no Shopping Gracher e na Unimed. No entanto, a grande concentração de descarte de resíduos é registrada durante o evento. No ano passado, foram entregues 524 lâmpadas, 574 quilos de lixo eletrônico, 122 unidades de pilhas e baterias e um pneu. 
+            “São resíduos altamente poluentes, que não podem ser descartados junto ao lixo comum. Por isso nós estamos aqui, dispostos a receber este material e dar a destinação final correta. A nossa expectativa é que o volume coletado seja expressivo, o que demonstra uma comunidade sensibilizada e consciente”, enfatiza Janara. 
+          </p>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+          <h4>O que é Sustentabilidade?</h4>
+          <p>
+            A sustentabilidade também pode ser definida como a capacidade de o ser humano interagir com 
+            o mundo, preservando o meio ambiente para não comprometer os recursos naturais das gerações 
+            futuras. O conceito de sustentabilidade é complexo, pois atende a um conjunto de variáveis 
+            interdependentes, mas podemos dizer que deve ter a capacidade de integrar as questões sociais, 
+            energéticas, econômicas e ambientais.
+          </p>
+          <ul>
+            <li>
+              Questão social: é preciso respeitar o ser humano, para que este possa respeitar a natureza. E do ponto de vista humano, ele próprio é a parte mais importante do meio ambiente.
+            </li>
+            <li>
+              Questão energética: sem energia a economia não se desenvolve. E se a economia não se desenvolve, as condições de vida das populações se deterioram.
+            </li>
+            <li>
+              Questão ambiental: com o meio ambiente degradado, o ser humano abrevia o seu tempo de vida; a economia não se desenvolve; o futuro fica insustentável.
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+          <h4>Oceanos de Plástico</h4>
+          <p>Há tempos estamos nessa missão de reduzir o uso de plástico, não só no quesito empresa, mas como também no nosso dia a dia, nas nossas escolhas e no nosso modo de viver. Precisamos fazer com que as pessoas recebam essas informações para assim contribuir com a sustentabilidade do planeta.</p>
+          <p>Assim como é mostrado no documentário Oceanos de Plástico, nossos oceanos são arrastados por cinco grandes correntes, resultante dos ventos e da rotação da Terra. O que acontece é que o lixo jogado em rios e praias, acabam sendo levados para os oceanos, e pelo efeito das correntes, formando as conhecidas ilhas de plástico.</p>
+          <p>Uma poluição ainda pior que essa é a neblina de plástico, formada pelos micro plásticos, ela se forma a partir da quebra do material plástico flutuante nos oceanos, em decorrência da ação das ondas, do sal e dos raios ultravioletas. Essa poluição tem um difícil tratamento, devido à dimensão do seu impacto, como é demonstrado no documentário.</p>
+          <p>É importante ressaltar que o impacto não se restringe ao meio ambiente, afinal, os peixes acabam ingerindo esse plástico, assim as toxinas se depositam no peixe, que serve de alimento para outros animais marinhos e até para o homem.</p>
+          <p>Esses dados são alarmantes e necessitam de uma solução com urgência, o que envolve a sociedade que precisa repensar as formas de consumo e as esferas políticas que são responsáveis pelas políticas públicas de enfrentamento.</p>
+          <p>Dentre esses dados, vale a pena ressaltar que nos últimos dez anos, foram produzidos mais plásticos que no século que os antecede, sendo que metade desses plásticos são descartáveis.</p>
+          <a href="https://youtu.be/J-SBAG64ku8" target="_blank">Assita ao documentário completo</a>
+        </div>
+    </div>
+    </div>
+  </div>
+    <hr class="featurette-divider">
+
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row" id="quemsomos">
+        <div class="col-lg-4">
+          <img src="img/evandro.jpg" class="bd-placeholder-img rounded-circle" width="250" height="250">
+          <h2>Evandro Evangelista Junior</h2>
+          <p>Nascido na cidade de Brusque e apaixonado por programação está na terceira fase de sistemas de informação na instituição da Unifebe</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="img/matheus.jpeg" class="bd-placeholder-img rounded-circle" width="250" height="250">
+          <h2>Matheus Adriano Haag</h2>
+          <p>Natural do Rio Grande do Sul, amante de música e tecnologia, cursando 3° fase de Sistemas de informação na Unifebe.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="img/luiz.jpeg" class="bd-placeholder-img rounded-circle" width="250" height="250">
+          <h2>Luiz Filipe da Silva</h2>
+          <p>Natural de Brusque, pratíca trilha de gaiola e jogar online, atualmente cursando a terceira fase de Sistemas de Informação"</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end" ><a href="#">Voltar ao topo</a></p>
+      <p>&copy; 2021 Unifebe.  <a href="#"></a>  <a href="#"></a></p>
+    </footer>
+    </main>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  </body>
+</html>
